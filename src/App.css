@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+.active {
+  background-color: #fff !important;
+  border: 2px solid #593196 !important;
+  color: #593196 !important;
+  border-radius: 5px !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.brandTitle {
+  margin-left: 10px !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bgSecondary {
+  background-color: #dbf3fa;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.innerContainer {
+  margin-top: 30px !important;
+  background-color: #fff;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 80vw !important;
+  border-radius: 10px;
+  height: 70vh !important;
 }
 
-.App-link {
-  color: #61dafb;
+.innerContainer ul {
+  width: 180px;
+  list-style: none;
+  left: 0;
+  margin-left: -20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.innerContainer ul li {
+  color: rgb(36, 36, 36);
+  font-weight: bold;
+  padding: 5px;
+}
+
+.innerContainer ul li a{
+  padding-left: 15px;
+  text-decoration: none;
+  color: rgb(36, 36, 36) !important;
+}
+
+.innerContainer ul li a.active{
+  color: #593196 !important;
+  border: solid #593196 !important;
+  border-width: 0 0 0 3px !important;
+  border-radius: 0 !important;
+}
+
+.innerContainer::-webkit-scrollbar {
+  width: 1em;
+}
+ 
+.innerContainer::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+.innerContainer::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid #593196;
 }
